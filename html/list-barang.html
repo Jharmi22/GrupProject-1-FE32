@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Barang</title>
+    <link rel="stylesheet" href="CSS/list-barang.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Gloria+Hallelujah&family=Marck+Script&family=Sarabun:wght@100&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+     <!-- Navbar -->
+     <section id="list-barang" class="jumbotron jumbotron-fluid">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">ApoSkill</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="color: whitesmoke; font-family: Sarabun, sans-serif">Menu</span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="list-barang.html">Daftar Obat</a>
+              <li class="nav-item">
+                <a class="nav-link" href="keranjang-belanja.html">Keranjang</a>
+              <li class="nav-item">
+                <a class="nav-link" href="Pemesanan.html">Pesanan</a>
+              </li>
+              </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        <!-- Judul halaman -->
+        <div class="row" id="judul-halaman">
+            <div class="col-12">
+                <h1 class="text-judul-halaman">List Barang</h1>
+            </div>
+        <!-- Akhir Navbar -->
+        <!-- List Barang -->
+        <section class="page-section" id="Barang">
+         
+            <!-- obat -->
+            <div class="container" id="obat">
+              <div class="text-center">
+                <h1 id="tagline" class="section-heading">obat</h1>
+                
+                <hr />
+              </div>
+              <div class="row d-flex justify-content-center" id="container-obat">
+               <!-- dubuat di fetch -->
+              </div>
+            </div>
+            <!-- Akhir obat -->
+          </section>
+        <!-- Akhir List Barang -->
+         <!-- Barang Modals-->
+        <!-- Barang item 1 modal popup-->
+        <div id="list-obat">
+          <!-- dibuat di fetch -->
+        <!-- </div>
+        <div id="list-buah"> -->
+          <!-- dibuat di fetch -->
+        </div>
+        <!-- popup buat masukan ke keranjang -->
+        <div class="Populer-modal modal fade" id="modalobat" tabindex="-1" role="dialog" aria-hidden="true" id="pap" style="margin-top: 2rem;">
+          <div class="modal-dialog" style="width:50%;margin-left: 25%;border: none;">
+            <div class="modal-content">
+              <div class="close-modal" data-bs-dismiss="modal"></div>
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col">
+                    <header class="modal-body">
+                      <header class="masthead">
+                        <div class="container-fluid halaman">
+                        </div>
+                      </header>
+                      <p >Barang Sudah Masuk ke dalam Keranjang</p>
+                      <button class="btn btn-success btn-xl text-uppercase"  type="button" onclick="location.href='list-barang.html'" >
+                        OK
+                      </button>
+                    </header>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    <script src="Js/list-barang.js"></script>
+   <script src="vendor/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.js" ></script>    
+  </body>
+</html>
