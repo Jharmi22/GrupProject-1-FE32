@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/Pembayaran.css" />
+    <link rel="stylesheet" href="vendor/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Gloria+Hallelujah&family=Marck+Script&family=Sarabun:wght@100&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <section id="jumbotron" class="jumbotron jumbotron-fluid ">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">ApoSkill</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="color: whitesmoke; font-family: Sarabun, sans-serif">Menu</span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="list-barang.html">Daftar Obat</a>
+              <li class="nav-item">
+                <a class="nav-link" href="keranjang-belanja.html">Keranjang</a>
+              <li class="nav-item">
+                <a class="nav-link" href="Pemesanan.html">Pesanan</a>
+              </li>
+              </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Judul Halaman-->
+      <div class="row" id="judul-halaman">
+        <div class="col">
+            <h1 class="text-judul-halaman">Pembayaran</h1>
+        </div>
+      </section>
+      <!-- Akhir judul Halaman -->
+      
+      <!-- Pengisian Alamat dan Nama Penerima -->
+      <div class="row d-flex justify-content-beetwen">
+        <div class="col">
+         
+            
+            <div class="container">
+              <div class="row">
+                  <div class="col-lg-6 col-sm-12 mb-4">
+                    <label for="" class="form-label">Nama Penerima</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp" required >
+                    <div class="form-text">Enter your full name.</div>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 mb-4">
+                    <label for="" class="form-label">Tanggal Transaksi</label>
+                    <input type="date" class="form-control" id="date" aria-describedby="emailHelp" required >
+                    <div class="form-text">Enter your active email</div>
+                  </div>
+                  <div class="col-lg-6 col-sm-12 mb-4">
+                    <label for="" class="form-label">Alamat Lengkap</label>
+                    <input type="text" class="form-control" id="address" aria-describedby="emailHelp" required >
+                    <div class="form-text">We will never share your address with others</div>
+                  </div>
+                 
+                  <div class="col-lg-6 col-sm-12 mb-4">
+                    <label for="" class="form-label">Nomor HandPhone</label>
+                    <input type="number" class="form-control" id="numberphone" aria-describedby="emailHelp" required >
+                    <div  class="form-text">Enter a phone number where you can be reached</div>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-12 col-sm-12 mb-4">
+                  <div class="col-12 col-sm-12 mb-4" style="margin-top: 2rem;">
+                    <select class="form-select" aria-label="Default select example"  required>
+                      <label for="" class="form-label" >Pilih Salah Satu</label>
+                      <option selected>Metode Pembayaran</option>
+                      <option value="1">COD(Bayar Di Tempat)</option>
+                      <option value="2">Transfer Bank</option>
+                      <option value="3">Bayar Tunai DiMitra/Agen</option>
+                      <option value="3">Kartu Kredit/Debit</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid" id="pembayaran">
+                <div class="row">
+                  <div class="col-12 col-sm-12" id="rincianpembayaran">
+                    <h5 class="text-dark" style="text-align: center;">Rincian Pembayaran</h5>
+                    <hr>
+                    <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr></tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><b class="">Jumlah Barang</b></td>
+                          <td class="text-dark" id="qty_barang"></td>
+                        </tr>
+                        <tr>
+                          <td><b class="">Total Harga Barang</b></td>
+                          <td class="text-dark" id="total_hrg_barang"></td>
+                        </tr>
+                        <tr>
+                          <td><b class="">Biaya Pengiriman</b></td>
+                          <td class="text-dark">40000</td>
+                        </tr>
+                        <tr>
+                          <td class=""><b>Total Pembayaran</b></td>
+                          <td class="text-dark" id="total_all">Rp. </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="caption hide" style="text-align: center; font-weight:bold;color:green">
+                <p>Transaksi Berhasil, Silahkan cek ke Pemesanan :) </p>
+                <a id="tombol" class="btn m-1 w-100 btn-success tombol" href="Pemesanan.html"><i class="fa fa-fw fa-shopping-cart"></i>Masuk Ke Keranjang</a>
+           </div>
+            </div class="col-12" style="text-align:center" id="tombol">
+            
+              <button class="btn m-1 w-100 btn-success tombol" id="bayar"><i class="fa fa-fw fa-shopping-cart"></i>Bayar Sekarang</button>
+            </div>
+            
+
+        </div>
+      </div>
+      <!-- Akhir Pengisian Alamat dan Nama Penerima -->
+
+      <!-- Total Harga dan CheckOut -->
+        
+      <!--  -->
+      <!--  -->
+      <!-- popup -->
+        <div class="Populer-modal modal fade" id="modalsayur" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><b>Tutup</b></div>
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="modal-body">
+                    <!-- Product details-->
+                    <!-- <header class="masthead">
+                      <div class="container-fluid halaman">
+                        <div style="background-color: rgba(0, 0, 0, 0.5); border-radius: 10px;">
+                          <div class="masthead-subheading">Green Store</div>
+                          <div style="z-index: 1" class="masthead-heading">Beli Semaunya, Bayar Seadanya</div>
+                        </div>
+                      </div>
+                    </header> -->
+
+                    <button class="btn btn-success btn-xl text-uppercase"  type="button" onclick="location.href='Pemesanan.html'">
+                      TerimaKasih telah berbelanja</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- AKhir Popup -->
+    <!-- Akhir Total Harga dan CheckOut -->
+      <script src="Js/pembayaran.js"></script>
+      <script src="vendor/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
