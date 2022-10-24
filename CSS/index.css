@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Navbar */
+
+#jumbotron {
+  background-image: url(https://cdn.pixabay.com/photo/2016/02/01/14/36/pills-1173653_1280.jpg);
+  background-size: 100%;
+  padding-top: 15rem;
+  padding-bottom: 5rem;
+}
+.navbar {
+  margin-top: 1rem;
+  margin-left: 5%;
+  margin-bottom: 100px;
+  background-color: rgba(4, 45, 65, 0.7);
+  border-radius: 10px;
+  padding: 1rem;
+  width: 90%;
+}
+.navbar a {
+  font-family:Arial, Helvetica, sans-serif
+  font-size: 20px;
+  color: #fff;
+}
+.navbar a:hover {
+  color: rgb(163, 136, 3);
+}
+.dropdown a {
+  color: black;
+}
+.dropdown a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+}
+.masthead .halaman {
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 130px;
+  color: whitesmoke;
+}
+
+.halaman .masthead-subheading {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 5rem;
+  width: 100%;
+}
+.halaman .masthead-heading {
+  font-family: "Marck Script", cursive;
+  font-size: 2rem;
+  width: 100%;
+}
+/* Akhir Navbar */
+#Fitur .container {
+  font-family:Arial, Helvetica, sans-serif;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+
+/* Akhir Populer */
+/* Team */
+.team-member {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.team-member img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 1rem;
+  border-radius: 100%;
+  border: 10px double rgba(4, 45, 65, 0.7);
+}
+#team {
+  font-family:Arial, Helvetica, sans-serif;
+}
+#team h4 {
+  margin-bottom: 1rem;
+}
+
+#team .container {
+  font-family: "Sarabun", sans-serif;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Contact */
+section#contact {
+  font-family: "Sarabun", sans-serif;
+  background-color: #212529;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-bottom: 3rem;
+}
+section#contact .section-heading {
+  color: #fff;
+}
+section#contact form#contactForm .form-group {
+  margin-bottom: 1.5rem;
+}
+section#contact form#contactForm .form-group input,
+section#contact form#contactForm .form-group textarea {
+  padding: 1.25rem;
+}
+section#contact form#contactForm .form-group input.form-control {
+  height: auto;
+}
+section#contact form#contactForm .form-group-textarea {
+  height: 100%;
+}
+section#contact form#contactForm .form-group-textarea textarea {
+  height: 100%;
+  min-height: 10rem;
+}
+section#contact form#contactForm p.help-block {
+  margin: 0;
+}
+section#contact form#contactForm .form-control:focus {
+  border-color: #ffc800;
+  box-shadow: none;
+}
+section#contact form#contactForm ::-webkit-input-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #ced4da;
+}
+section#contact form#contactForm :-moz-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #ced4da;
+}
+section#contact form#contactForm ::-moz-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #ced4da;
+}
+section#contact form#contactForm :-ms-input-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #ced4da;
+}
